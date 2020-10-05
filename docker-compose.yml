@@ -1,0 +1,9 @@
+# dev docker-compose to up db instance
+version: "3"
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/db:/data/db
